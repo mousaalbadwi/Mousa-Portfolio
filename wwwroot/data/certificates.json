@@ -1,0 +1,23 @@
+﻿[
+  {
+    "image": "/images/certificates/fullstack.jpg",
+    "title": "Full-Stack Web Development",
+    "issuer": "—",
+    "date": "2024",
+    "desc": "Fundamentals and practical projects in .NET/JS, databases, and hosting."
+  },
+  {
+    "image": "/images/certificates/qa.jpg",
+    "title": "Software QA / Testing",
+    "issuer": "—",
+    "date": "2024",
+    "desc": "Testing concepts, writing test cases, and defect tracking tools."
+  },
+  {
+    "image": "/images/certificates/wordpress-ecom.jpg",
+    "title": "WordPress E-commerce",
+    "issuer": "—",
+    "date": "2024",
+    "desc": "Build a store, pay/ship, and manage products."
+  }
+]

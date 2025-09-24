@@ -1,0 +1,82 @@
+﻿@model List<MousaPortfolio.Models.Project>
+@{
+    ViewData["Title"] = "Projects";
+    var allTechs = Model?
+        .SelectMany(p => p.Tech ?? new List<string>())
+        .Where(t => !string.IsNullOrWhiteSpace(t))
+        .Select(t => t.Trim())
+        .Distinct(StringComparer.OrdinalIgnoreCase)
+        .OrderBy(t => t)
+        .ToList() ?? new List<string>();
+}
+
+<section class="py-4">
+    <h2 class="fw-bold mb-3" style="letter-spacing:.2px;">Featured Projects</h2>
+
+    <!-- Toolbar: Back + Segmented filters + Search -->
+    <div class="projects-toolbar-wrap d-flex flex-wrap align-items-center gap-2 mb-4">
+        <a asp-controller="Home" asp-action="Index" class="btn proj-back d-inline-flex align-items-center">
+            <i class="bi bi-arrow-left me-2"></i><span>Back</span>
+        </a>
+
+        <div class="segmented glass-soft border rounded-pill px-2 py-1 d-flex flex-wrap align-items-center">
+            <button class="seg-btn active" data-filter="all">All</button>
+            @foreach (var t in allTechs)
+            {
+                <button class="seg-btn" data-filter="@t">@t</button>
+            }
+        </div>
+
+        <div class="proj-search ms-auto">
+            <i class="bi bi-search"></i>
+            <input id="projSearch" type="search" class="form-control" placeholder="Search projects…" />
+        </div>
+    </div>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-warning glass-soft border-0">No projects yet. Add items to <code>wwwroot/data/projects.json</code>.</div>
+    }
+    else
+    {
+        <div id="projectsGrid" class="row g-4">
+            @foreach (var p in Model)
+            {
+                var techAttr = string.Join(" ", (p.Tech ?? new List<string>()).Select(x => x.Replace(" ", "_")));
+                <div class="col-12 col-md-6 col-lg-4 project-card" data-tech="@techAttr" data-title="@((p.Title + " " + p.Desc).ToLower())">
+                    <div class="card projects-card h-100 glass-soft shadow-sm border-0">
+                        <img src="@p.Image" alt="@p.Title cover" class="card-img-top projects-img" loading="lazy" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-semibold mb-2">@p.Title</h5>
+                            <p class="text-soft mb-3">@p.Desc</p>
+
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                @foreach (var t in p.Tech ?? new List<string>())
+                                {
+                                    <span class="badge text-bg-light border">@t</span>
+                                }
+                            </div>
+
+                            <div class="mt-auto d-flex gap-2">
+                                @if (!string.IsNullOrWhiteSpace(p.Repo))
+                                {
+                                    <a class="btn btn-sm btn-primary rounded-pill" href="@p.Repo" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i>Check Repo</a>
+                                }
+                                @if (!string.IsNullOrWhiteSpace(p.Live))
+                                {
+                                    <a class="btn btn-sm btn-outline-dark rounded-pill" href="@p.Live" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div id="noResults" class="text-center text-soft mt-4 d-none">No results… try another filter.</div>
+    }
+</section>
+
+@section Scripts {
+    <script src="~/js/projects.js" asp-append-version="true"></script>
+}

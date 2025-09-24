@@ -1,0 +1,245 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<section class="py-5">
+    <!-- ===== Hero / Header ===== -->
+    <div class="glass-soft border rounded-4 p-4 p-md-5 mb-4" data-aos="fade-up">
+        <div class="d-flex flex-column flex-md-row align-items-md-center gap-4">
+            <img src="~/images/mousa.png" alt="Mousa portrait" class="rounded-circle border" style="width:96px;height:96px;object-fit:cover;">
+            <div class="flex-grow-1">
+                <h1 class="fw-bold mb-1">Mousa Mustafa</h1>
+                <div class="text-soft mb-2">.NET Backend · ASP.NET Core · EF Core · SQL Server · Bootstrap</div>
+                <p class="mb-0">
+                    Junior web developer with a strong foundation in C#/Java and a focus on building reliable .NET web apps,
+                    clean code, and usable UIs. Hands-on with ASP.NET Core, EF Core, SQL Server, and Bootstrap—plus QA/testing basics.
+                </p>
+            </div>
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary rounded-pill" href="~/files/CV.pdf" download="Mousa_CV.pdf">
+                    <i class="bi bi-download me-2"></i>Download CV
+                </a>
+                <div class="d-flex gap-3 justify-content-md-end">
+                    <a class="footer-link fs-5" href="https://github.com/mousaalbadwi/" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a class="footer-link fs-5" href="https://www.linkedin.com/in/mousa-mustafa-798822277/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a class="footer-link fs-5" href="mailto:moeyad2003@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_CertsBook")
+   
+
+
+    <!-- ===== Quick facts ===== -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3" data-aos="zoom-in">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="text-soft small">Role</div>
+                <div class="fw-semibold">.NET Backend</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="60">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="text-soft small">Location</div>
+                <div class="fw-semibold">Amman, Jordan</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="120">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="text-soft small">Availability</div>
+                <div class="fw-semibold">Internships / Freelance</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="180">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="text-soft small">Contact</div>
+                <div class="fw-semibold">moeyad2003@gmail.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Summary ===== -->
+    <div class="glass-soft border rounded-4 p-4 mb-5" data-aos="fade-up">
+        <h4 class="fw-bold mb-2">Summary</h4>
+        <p class="mb-0">
+            Recent Software Engineering graduate (BAU, 2021–2025). Solid grounding in OOP (Java/C#),
+            web (HTML/CSS/JS + Bootstrap), and backend work with ASP.NET Core, EF Core, and SQL Server.
+            Practical experience from internships at Orange Digital Center and 01Tracks, with extra training in
+            QA Software Testing, Full-Stack Web Dev (108h), and WordPress E-commerce (33h). Strong problem solving,
+            teamwork and communication—aiming to ship maintainable, accessible software that actually helps users.
+        </p>
+    </div>
+
+    <!-- ===== Experience Timeline ===== -->
+    <h4 class="fw-bold mb-3">Experience</h4>
+    <div class="timeline mb-5">
+        <div class="tl-item" data-aos="fade-right">
+            <div class="tl-dot"></div>
+            <div class="tl-card glass-soft border rounded-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div class="fw-semibold">Software Engineering Intern — Orange Digital Center</div>
+                    <span class="badge text-bg-light border">Mar 2025 — Jun 2025</span>
+                </div>
+                <div class="text-soft">
+                    Hands-on training and teamwork building real solutions; focused on clean code, agile practice,
+                    and cross-team collaboration.
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge text-bg-light border">Flutter basics</span>
+                    <span class="badge text-bg-light border">Teamwork</span>
+                    <span class="badge text-bg-light border">FastAPI (exposure)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tl-item" data-aos="fade-right" data-aos-delay="80">
+            <div class="tl-dot"></div>
+            <div class="tl-card glass-soft border rounded-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div class="fw-semibold">.NET Development Intern — 01Tracks</div>
+                    <span class="badge text-bg-light border">Feb 2025 — May 2025</span>
+                </div>
+                <div class="text-soft">
+                    Intensive coding on .NET technologies, ASP.NET MVC/Core, building and refactoring features with reviews.
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge text-bg-light border">ASP.NET Core</span>
+                    <span class="badge text-bg-light border">EF Core</span>
+                    <span class="badge text-bg-light border">SQL Server</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tl-item" data-aos="fade-right" data-aos-delay="160">
+            <div class="tl-dot"></div>
+            <div class="tl-card glass-soft border rounded-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div class="fw-semibold">Customer Representative — Extensya</div>
+                    <span class="badge text-bg-light border">Nov 2024 — Jun 2025</span>
+                </div>
+                <div class="text-soft">
+                    Supported customers across phone & digital channels; sharpened communication, prioritization, and clarity.
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                    <span class="badge text-bg-light border">Communication</span>
+                    <span class="badge text-bg-light border">Problem Solving</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tl-item" data-aos="fade-right" data-aos-delay="240">
+            <div class="tl-dot"></div>
+            <div class="tl-card glass-soft border rounded-4">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <div class="fw-semibold">Sales / Electronic Officer — Family Business</div>
+                    <span class="badge text-bg-light border">2021 — 2023</span>
+                </div>
+                <div class="text-soft">
+                    Helped with data entry and operations in heavy-equipment spare parts; discipline, accuracy, and ownership.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Education ===== -->
+    <h4 class="fw-bold mb-3">Education</h4>
+    <div class="glass-soft border rounded-4 p-3 mb-5" data-aos="fade-up">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <div class="fw-semibold">B.Sc. Software Engineering — Al-Balqa Applied University</div>
+                <div class="text-soft">Salt, Jordan</div>
+            </div>
+            <span class="badge text-bg-light border">2021 — 2025</span>
+        </div>
+    </div>
+
+    <!-- ===== Certifications ===== -->
+    <h4 class="fw-bold mb-3">Courses & Certifications</h4>
+    <div class="row g-3 mb-5">
+        <div class="col-12 col-md-6" data-aos="fade-up">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-semibold">Full-Stack Web Development (108h)</div>
+                    <span class="badge text-bg-light border">Oct 2023 — Jun 2024</span>
+                </div>
+                <div class="text-soft">Al-Azimah for Consulting & Training</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="80">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-semibold">QA Software Testing (40h)</div>
+                    <span class="badge text-bg-light border">May — Aug 2023</span>
+                </div>
+                <div class="text-soft">The Hope International Company</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="160">
+            <div class="glass-soft border rounded-4 p-3 h-100">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-semibold">WordPress E-commerce (33h)</div>
+                    <span class="badge text-bg-light border">Sep 2024</span>
+                </div>
+                <div class="text-soft">Digital Opportunity Trust (with UNICEF Jordan)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Skills ===== -->
+    <h4 class="fw-bold mb-3">Skills & Tools</h4>
+    <div class="glass-soft border rounded-4 p-3 mb-4" data-aos="fade-up">
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge text-bg-light border">C#</span>
+            <span class="badge text-bg-light border">Java</span>
+            <span class="badge text-bg-light border">ASP.NET Core</span>
+            <span class="badge text-bg-light border">EF Core</span>
+            <span class="badge text-bg-light border">SQL Server</span>
+            <span class="badge text-bg-light border">MySQL</span>
+            <span class="badge text-bg-light border">HTML</span>
+            <span class="badge text-bg-light border">CSS</span>
+            <span class="badge text-bg-light border">JavaScript</span>
+            <span class="badge text-bg-light border">Bootstrap</span>
+            <span class="badge text-bg-light border">jQuery</span>
+            <span class="badge text-bg-light border">Git/GitHub</span>
+            <span class="badge text-bg-light border">Communication Skills</span>
+            <span class="badge text-bg-light border">Problem Solving</span>
+            <span class="badge text-bg-light border">C++</span>
+            <span class="badge text-bg-light border">Php</span>
+            <span class="badge text-bg-light border">VB</span>
+            <span class="badge text-bg-light border">Dart</span>
+            <span class="badge text-bg-light border">Flutter</span>
+            <span class="badge text-bg-light border">FastAPI</span>
+            <span class="badge text-bg-light border">WordPress</span>
+            <span class="badge text-bg-light border">QA basics</span>
+        </div>
+    </div>
+
+    <!-- ===== Callouts ===== -->
+    <div class="d-flex flex-wrap gap-2" data-aos="fade-up">
+        <a class="btn btn-outline-dark rounded-pill" href="~/files/CV.pdf" download="Mousa_CV.pdf">
+            <i class="bi bi-download me-2"></i>Download CV
+        </a>
+        <a class="btn btn-outline-dark rounded-pill" href="https://www.linkedin.com/in/mousa-mustafa-798822277/" target="_blank" rel="noopener">
+            <i class="bi bi-linkedin me-2"></i>LinkedIn
+        </a>
+        <a class="btn btn-outline-dark rounded-pill" href="https://github.com/mousaalbadwi/" target="_blank" rel="noopener">
+            <i class="bi bi-github me-2"></i>GitHub
+        </a>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // لو وصل المستخدم بـ hash (#skills مثلاً) يعمل سكرول ناعم
+        if (location.hash) {
+          const el = document.querySelector(location.hash);
+          el && el.scrollIntoView({behavior:'smooth'});
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 600 });</script>
+    <script src="~/js/about.js" asp-append-version="true"></script>
+}

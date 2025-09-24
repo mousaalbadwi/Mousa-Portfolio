@@ -1,0 +1,519 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- ===== HERO ===== -->
+<section class="hero-wrap position-relative">
+    <div class="hero-bg" style="background-image:url('/images/hero-bg.jpg')"></div>
+
+    <div class="container position-relative py-5">
+        <div class="row align-items-center g-5">
+            <!-- النص -->
+            <div class="col-lg-7" data-aos="fade-right">
+                <div class="glass p-4 p-md-5">
+                    <span class="badge rounded-pill text-bg-light border me-2">Portfolio v1</span>
+                    <span class="badge rounded-pill text-bg-light border">Open to Opportunities</span>
+
+                    <h1 class="display-5 fw-bold mt-3">
+                        Building clean web apps with
+                        <span class="section-title">ASP.NET Core</span> & <span class="section-title">SQL Server</span>.
+                    </h1>
+
+                    <p class="lead text-soft mt-3">
+                        Software Engineer focused on reliable backends and elegant Bootstrap UIs.
+                    </p>
+
+                    <!-- شارات المهارات -->
+                    <div class="d-flex flex-wrap gap-2 my-3">
+                        <span class="tech-badge"><i class="bi bi-dot"></i> ASP.NET MVC Core</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> EF Core</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> SQL Server</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> MySQL</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> C#</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> PHP</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> Java</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> JavaScript</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> HTML5</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> CSS</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> Bootstrap</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> QA Software Testing</span>
+                        <span class="tech-badge"><i class="bi bi-dot"></i> WordPress</span>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <a class="btn btn-primary btn-lg rounded-pill px-4" asp-controller="Projects" asp-action="Index">
+                            <i class="bi bi-grid-3x3-gap-fill me-1"></i> View Projects
+                        </a>
+                        <a class="btn btn-outline-dark btn-lg rounded-pill px-4" asp-controller="Home" asp-action="About">
+                            <i class="bi bi-person-lines-fill me-1"></i> About Me
+                        </a>
+                        <a class="btn btn-outline-dark btn-lg rounded-pill px-4"
+                           href="~/files/CV.pdf" download="Mousa_CV.pdf" target="_blank" rel="noopener">
+                            <i class="bi bi-download me-1"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الصورة الواقعية -->
+            <div class="col-lg-5 text-center" data-aos="fade-left">
+                <img src="~/images/mousa.png" alt="Mousa — Software Engineer" class="hero-avatar">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Tools strip (Marquee) ===== -->
+<section class="py-5">
+    <div class="container text-center">
+        <h3 class="mb-1">The Tools Behind The Experience</h3>
+        <p class="text-soft mb-4">From ASP.NET Core to SQL Server & Bootstrap — building with modern technologies.</p>
+
+        <div class="tools-marquee">
+            <ul class="tools-track">
+                <!-- تتكرر مرتين لتحريك لا نهائي -->
+                <li><i class="bi bi-github"></i></li>
+                <li><i class="bi bi-git"></i></li>
+                <li><i class="bi bi-bootstrap-fill"></i></li>
+                <li><i class="bi bi-filetype-js"></i></li>
+                <li><i class="bi bi-filetype-html"></i></li>
+                <li><i class="bi bi-filetype-css"></i></li>
+                <li><i class="bi bi-database"></i></li>
+                <li><i class="bi bi-microsoft"></i></li>
+                <li><i class="bi bi-braces"></i></li>
+                <li><i class="bi bi-window-stack"></i></li>
+
+                <li><i class="bi bi-github"></i></li>
+                <li><i class="bi bi-git"></i></li>
+                <li><i class="bi bi-bootstrap-fill"></i></li>
+                <li><i class="bi bi-filetype-js"></i></li>
+                <li><i class="bi bi-filetype-html"></i></li>
+                <li><i class="bi bi-filetype-css"></i></li>
+                <li><i class="bi bi-database"></i></li>
+                <li><i class="bi bi-microsoft"></i></li>
+                <li><i class="bi bi-braces"></i></li>
+                <li><i class="bi bi-window-stack"></i></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Featured Projects ===== -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-3">
+            <h2 class="section-title m-0">Featured Projects</h2>
+            <a class="btn btn-sm btn-outline-dark rounded-pill" asp-controller="Projects" asp-action="Index">
+                See all <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+
+        <div class="row g-4">
+            <!-- Nabd -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                <div class="card project-card card-tilt h-100">
+                    <img src="~/images/project4.jpg" class="card-img-top" alt="Nabd Application">
+                    <div class="card-body">
+                        <h5 class="card-title">Nabd Application</h5>
+                        <p class="card-text text-soft">
+                            Designed for people with visual impairments to read any paper/book/file using only voice.
+                        </p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge text-bg-light border">Flutter</span>
+                            <span class="badge text-bg-light border">Dart</span>
+                            <span class="badge text-bg-light border">FastAPI</span>
+                            <span class="badge text-bg-light border">Java</span>
+                            <span class="badge text-bg-light border">AI Models</span>
+                            <span class="badge text-bg-light border">Firebase</span>
+                        </div>
+                        <a class="btn btn-repo btn-sm rounded-pill"
+                           href="https://github.com/Abdallah-Allaham/Nabd" target="_blank" rel="noopener">
+                            <i class="bi bi-git me-1"></i> Check Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- University Education System -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card project-card card-tilt h-100">
+                    <img src="~/images/project1.jpg" class="card-img-top" alt="University Education System">
+                    <div class="card-body">
+                        <h5 class="card-title">University Education System</h5>
+                        <p class="card-text text-soft">Registration, courses, and exam workflows.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge text-bg-light border">ASP.NET MVC Core</span>
+                            <span class="badge text-bg-light border">EF Core</span>
+                            <span class="badge text-bg-light border">JavaScript</span>
+                            <span class="badge text-bg-light border">C#</span>
+                            <span class="badge text-bg-light border">HTML5</span>
+                            <span class="badge text-bg-light border">CSS</span>
+                            <span class="badge text-bg-light border">jQuery</span>
+                            <span class="badge text-bg-light border">Bootstrap</span>
+                        </div>
+                        <a class="btn btn-repo btn-sm rounded-pill"
+                           href="https://github.com/mousaalbadwi/Muta-Engineering-" target="_blank" rel="noopener">
+                            <i class="bi bi-git me-1"></i> Check Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee Management System -->
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card project-card card-tilt h-100">
+                    <img src="~/images/project3.jpg" class="card-img-top" alt="Employee Management System">
+                    <div class="card-body">
+                        <h5 class="card-title">Employee Management System</h5>
+                        <p class="card-text text-soft">Manage employees, departments, and roles with CRUD.</p>
+                        <div class="d-flex flex-wrap gap-1 mb-3">
+                            <span class="badge text-bg-light border">ASP.NET Web Forms</span>
+                            <span class="badge text-bg-light border">SQL Server</span>
+                            <span class="badge text-bg-light border">HTML5</span>
+                            <span class="badge text-bg-light border">CSS</span>
+                            <span class="badge text-bg-light border">JavaScript</span>
+                            <span class="badge text-bg-light border">Bootstrap</span>
+                            <span class="badge text-bg-light border">Visual Basic</span>
+                        </div>
+                        <a class="btn btn-repo btn-sm rounded-pill"
+                           href="https://github.com/mousaalbadwi/MousaTracks" target="_blank" rel="noopener">
+                            <i class="bi bi-git me-1"></i> Check Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== Contact + Globe ===== -->
+<section id="contact" class="py-5">
+
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- بطاقة التواصل -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="contact-card position-relative overflow-hidden">
+                    <canvas id="contactStars" class="contact-stars"></canvas>
+                    <div class="card-inner p-4 p-md-5 position-relative">
+                        <h3 class="fw-bold mb-2">Let’s Build Something Great Together</h3>
+                        <p class="text-soft mb-4">
+                            Whether you have a project in mind, a collaboration idea, or just want to connect — I’d love to hear from you.
+                        </p>
+
+                        <!-- أهم تعديل: ربط الفورم بالأكشن + AntiForgery + أسماء الحقول للموديل -->
+                        <form id="contactForm" asp-controller="Home" asp-action="Contact" method="post" novalidate class="row g-3">
+                            @Html.AntiForgeryToken()
+
+                            <!-- Honeypot: يجب أن تبقى فارغة -->
+                            <input type="text" name="Website" class="d-none" tabindex="-1" autocomplete="off" />
+
+                            <!-- حقل اسم فعلي للموديل (يتعبّى تلقائياً من حقلي First/Last) -->
+                            <input type="hidden" name="Name" id="fullNameHidden" />
+
+                            <div class="col-md-6">
+                                <div class="form-floating has-icon">
+                                    <input class="form-control contact-input" id="firstName" placeholder="First Name" required />
+                                    <label for="firstName">First Name</label>
+                                    <i class="bi bi-person input-icon"></i>
+                                    <div class="invalid-feedback">First name is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating has-icon">
+                                    <input class="form-control contact-input" id="lastName" placeholder="Last Name" required />
+                                    <label for="lastName">Last Name</label>
+                                    <i class="bi bi-person input-icon"></i>
+                                    <div class="invalid-feedback">Last name is required.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating has-icon">
+                                    <input type="email" class="form-control contact-input" id="email" name="Email" placeholder="Email" required />
+                                    <label for="email">Email</label>
+                                    <i class="bi bi-envelope input-icon"></i>
+                                    <div class="invalid-feedback">Enter a valid email.</div>
+                                </div>
+                            </div>
+
+                            <!-- موضوع الرسالة (مطلوب في الموديل) -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control contact-input" id="subject" name="Subject" placeholder="Subject" required maxlength="100" />
+                                    <label for="subject">Subject</label>
+                                    <div class="invalid-feedback">Subject is required.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control contact-input" id="message" name="Message" style="height: 200px" placeholder="Write here your needs..." required maxlength="2000"></textarea>
+                                    <label for="message">Write here your needs…</label>
+                                    <div class="invalid-feedback">Message can’t be empty.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-send w-100" type="submit">
+                                    <span>Send Message</span>
+                                    <i class="bi bi-send ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكرة المتحركة -->
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                <div class="globe-wrap mx-auto">
+                    <canvas id="globeCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        /* ===== Tilt on project cards ===== */
+        (function () {
+          const cards = document.querySelectorAll('.card-tilt');
+          const maxDeg = 5, glow = '0 18px 60px rgba(111,66,193,.28)';
+          cards.forEach(card => {
+            let rect;
+            function set(e){
+              rect = rect || card.getBoundingClientRect();
+              const x = e.clientX - rect.left, y = e.clientY - rect.top;
+              const rx = ((y - rect.height/2) / rect.height) * -maxDeg;
+              const ry = ((x - rect.width/2) / rect.width) * maxDeg;
+              card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+              card.style.boxShadow = glow;
+            }
+            function reset(){ rect=null; card.style.transform='translateY(0)'; card.style.boxShadow=''; }
+            card.addEventListener('mousemove', set);
+            card.addEventListener('mouseleave', reset);
+          });
+        })();
+
+        /* ===== Animated Globe (canvas) ===== */
+        (function () {
+          const c = document.getElementById('globeCanvas');
+          if (!c) return;
+          const ctx = c.getContext('2d');
+
+          let DPR, size, R, t = 0;
+          let points = [], orbits = [];
+
+          function resize() {
+            DPR = window.devicePixelRatio || 1;
+            size = c.parentElement.clientWidth;                      // مربع مرن
+            size = Math.min(size, 540);                              // سقف منطقي
+            c.width  = size * DPR;
+            c.height = size * DPR;
+            c.style.width  = size + 'px';
+            c.style.height = size + 'px';
+            ctx.setTransform(1,0,0,1,0,0);
+            ctx.scale(DPR, DPR);
+            R = (size / 2) * 0.82;
+
+            const COUNT = Math.floor(900 * (size / 640));
+            points = Array.from({ length: COUNT }, () => {
+              const u = Math.random(), v = Math.random();
+              const theta = 2 * Math.PI * u;
+              const phi = Math.acos(2 * v - 1);
+              return { theta, phi, r: Math.random() * 1.4 + 0.6 };
+            });
+
+            orbits = [
+              { tilt: 0.35, w: 1.6, speed: 0.7 },
+              { tilt: -0.5, w: 1.2, speed: 1.0 },
+              { tilt: 0.9,  w: 0.8, speed: 1.3 }
+            ];
+          }
+
+          function proj(theta, phi, rotY) {
+            const x3 = Math.sin(phi) * Math.cos(theta + rotY);
+            const z3 = Math.sin(phi) * Math.sin(theta + rotY);
+            const y3 = Math.cos(phi);
+            const x2 = (size / 2) + x3 * R;
+            const y2 = (size / 2) + y3 * R;
+            const d  = (z3 + 1.8) / 2.8;
+            return { x:x2, y:y2, d };
+          }
+
+          function drawBackgroundGlow() {
+            const cx = size/2, cy = size/2;
+            const g = ctx.createRadialGradient(cx, cy, R*0.1, cx, cy, R*1.02);
+            g.addColorStop(0, 'rgba(25,46,92,0.85)');
+            g.addColorStop(1, 'rgba(7,12,24,0.9)');
+            ctx.fillStyle = g;
+            ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2); ctx.fill();
+
+            const h = ctx.createRadialGradient(cx, cy, R*0.9, cx, cy, R*1.3);
+            h.addColorStop(0, 'rgba(120,160,255,.12)');
+            h.addColorStop(1, 'rgba(120,160,255,0)');
+            ctx.fillStyle = h;
+            ctx.beginPath(); ctx.arc(cx,cy,R*1.28,0,Math.PI*2); ctx.fill();
+
+            ctx.fillStyle = 'rgba(0,0,0,.45)';
+            ctx.beginPath(); ctx.ellipse(cx, cy + R*0.92, R*0.9, R*0.28, 0, 0, Math.PI*2); ctx.fill();
+          }
+
+          function drawGrid(rotY) {
+            ctx.save();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = 'rgba(130,170,255,.25)';
+            // خطوط طول
+            for (let i = 0; i < 12; i++) {
+              const th = (i/12) * Math.PI*2 + rotY*0.6;
+              ctx.beginPath();
+              for (let j=-Math.PI/2; j<=Math.PI/2; j+=Math.PI/90){
+                const p = proj(th, j + Math.PI/2, 0);
+                if (j === -Math.PI/2) ctx.moveTo(p.x,p.y); else ctx.lineTo(p.x,p.y);
+              }
+              ctx.globalAlpha=0.6; ctx.stroke();
+            }
+            // خطوط عرض
+            for (let i=-4;i<=4;i++){
+              const phi = (i/5)*(Math.PI/2) + Math.sin(rotY*0.6)*0.02;
+              ctx.beginPath();
+              for (let th=0; th<=Math.PI*2+0.01; th+=Math.PI/90){
+                const p = proj(th, phi + Math.PI/2, rotY);
+                if (th===0) ctx.moveTo(p.x,p.y); else ctx.lineTo(p.x,p.y);
+              }
+              ctx.globalAlpha=0.45; ctx.stroke();
+            }
+            ctx.restore();
+          }
+
+          function drawOrbits(rotY) {
+            ctx.save();
+            ctx.strokeStyle = 'rgba(87,140,255,.85)';
+            ctx.lineWidth = 1.6;
+            orbits.forEach((o,idx)=>{
+              const phase = (t*0.002*o.speed)+idx;
+              ctx.beginPath();
+              for (let a=0; a<=Math.PI*2+0.01; a+=Math.PI/180){
+                const theta=a+phase, phi=Math.sin(a*o.w)*o.tilt;
+                const p=proj(theta, phi + Math.PI/2, rotY);
+                if(a===0) ctx.moveTo(p.x,p.y); else ctx.lineTo(p.x,p.y);
+              }
+              ctx.globalAlpha=0.65; ctx.stroke();
+
+              const pulseTheta = phase*3 % (Math.PI*2);
+              const pulse = proj(pulseTheta, Math.sin(pulseTheta*o.w)*o.tilt + Math.PI/2, rotY);
+              ctx.globalAlpha=1; ctx.fillStyle='rgba(160,190,255,.95)';
+              ctx.beginPath(); ctx.arc(pulse.x,pulse.y,3.2,0,Math.PI*2); ctx.fill();
+            });
+            ctx.restore();
+          }
+
+          function drawPoints(rotY) {
+            points.forEach(p=>{
+              const pr = proj(p.theta, p.phi, rotY);
+              const r  = p.r * (0.7 + pr.d*0.6);
+              ctx.globalAlpha = 0.28 + pr.d*0.7;
+              ctx.fillStyle = 'rgba(150,180,255,.95)';
+              ctx.beginPath(); ctx.arc(pr.x,pr.y,r,0,Math.PI*2); ctx.fill();
+            });
+            ctx.globalAlpha=1;
+          }
+
+          function tick() {
+            ctx.clearRect(0,0,size,size);
+            const rotY = t*0.003;
+            drawBackgroundGlow();
+            drawGrid(rotY);
+            drawOrbits(rotY);
+            drawPoints(rotY);
+            t++;
+            requestAnimationFrame(tick);
+          }
+
+          window.addEventListener('resize', resize);
+          resize(); tick();
+        })();
+
+        /* ===== Stars inside contact card ===== */
+        (function(){
+          const canvas = document.getElementById('contactStars');
+          if(!canvas) return;
+          const ctx = canvas.getContext('2d');
+          let DPR=1, W=0, H=0, stars=[], tick=0;
+
+          function resize(){
+            DPR = window.devicePixelRatio || 1;
+            const b = canvas.getBoundingClientRect();
+            canvas.width  = Math.floor(b.width  * DPR);
+            canvas.height = Math.floor(b.height * DPR);
+            canvas.style.width  = b.width +'px';
+            canvas.style.height = b.height+'px';
+            ctx.setTransform(1,0,0,1,0,0);
+            ctx.scale(DPR, DPR);
+            W = b.width; H = b.height;
+
+            const COUNT = Math.floor((W*H)/12000);
+            stars = Array.from({length: COUNT}, () => ({
+              x: Math.random()*W, y: Math.random()*H,
+              r: Math.random()*1.2+.4, a: Math.random()*0.6+.2,
+              vx:(Math.random()-.5)*0.25, vy:(Math.random()-.5)*0.25
+            }));
+          }
+
+          function step(){
+            ctx.clearRect(0,0,W,H);
+            const g = ctx.createRadialGradient(W*0.65, H*0.3, 0, W*0.65, H*0.3, Math.max(W,H)*0.8);
+            g.addColorStop(0,'rgba(120,160,255,.08)');
+            g.addColorStop(1,'rgba(120,160,255,0)');
+            ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+
+            for(const s of stars){
+              s.x+=s.vx; s.y+=s.vy;
+              if(s.x<-2) s.x=W+2; if(s.x>W+2) s.x=-2;
+              if(s.y<-2) s.y=H+2; if(s.y>H+2) s.y=-2;
+              const tw = Math.sin((tick/30)+s.x*0.01+s.y*0.01)*0.35+0.65;
+              ctx.globalAlpha=s.a*tw; ctx.fillStyle='rgba(160,190,255,.95)';
+              ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill();
+            }
+            ctx.globalAlpha = 1;
+
+            ctx.strokeStyle='rgba(140,170,255,.14)'; ctx.lineWidth=1;
+            for(let i=0;i<stars.length;i++){
+              for(let j=i+1;j<i+6 && j<stars.length;j++){
+                const a=stars[i], b=stars[(j*7)%stars.length];
+                const dx=a.x-b.x, dy=a.y-b.y, d=dx*dx+dy*dy;
+                if(d<9000){ ctx.globalAlpha=.12; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); }
+              }
+            }
+            ctx.globalAlpha=1; tick++; requestAnimationFrame(step);
+          }
+
+          window.addEventListener('resize', resize);
+          resize(); step();
+        })();
+
+        /* ===== قبل الإرسال: نكوّن Name من First/Last ونفعّل التحقق ===== */
+        (function () {
+          const form = document.getElementById('contactForm');
+          if(!form) return;
+
+          form.addEventListener('submit', function (e) {
+            // عبّي الاسم الكامل للحقل المخفي "Name" المطلوب للموديل
+            const fn = (document.getElementById('firstName')?.value || '').trim();
+            const ln = (document.getElementById('lastName')?.value || '').trim();
+            document.getElementById('fullNameHidden').value = [fn, ln].filter(Boolean).join(' ');
+
+            // تحقّق بسيط للـ HTML5
+            if (!form.checkValidity()) {
+              e.preventDefault();
+              e.stopPropagation();
+              form.classList.add('was-validated');
+            }
+          }, false);
+        })();
+    </script>
+}
+

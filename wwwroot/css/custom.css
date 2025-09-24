@@ -1,0 +1,766 @@
+﻿/* =========================
+   THEME: Light/Dark via [data-theme] on <html>
+   متوافق بدون دوال تجريبية
+   ========================= */
+
+:root {
+    --brand: #6f42c1; /* Primary */
+    --brand-2: #fd7e14; /* Accent */
+    --radius: 28px;
+}
+
+/* ===== Light ===== */
+html[data-theme="light"] {
+    --bg: #ffffff;
+    --bg-subtle: #f6f7fb;
+    --text: #1d1f23;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --border: rgba(0,0,0,.08);
+    --pill-bg: rgba(246,247,251,.8); /* navbar pill */
+    --glass-bg: rgba(255,255,255,.85); /* general glass */
+    --hero-glass-bg: rgba(255,255,255,.88);
+    --brand-12: rgba(111,66,193,.12);
+    --brand-30: rgba(111,66,193,.30);
+    --text-12: rgba(29,31,35,.12);
+    --outline-hover: rgba(29,31,35,.06);
+}
+
+/* ===== Dark ===== */
+html[data-theme="dark"] {
+    --bg: #0b0e14;
+    --bg-subtle: #0f1320;
+    --text: #f2f4f8;
+    --muted: #c0c6d4;
+    --card: #151922;
+    --border: rgba(255,255,255,.12);
+    --pill-bg: rgba(15,19,32,.70);
+    --glass-bg: rgba(21,25,34,.92);
+    --hero-glass-bg: rgba(21,25,34,.88);
+    --brand-12: rgba(111,66,193,.18);
+    --brand-30: rgba(111,66,193,.38);
+    --text-12: rgba(242,244,248,.12);
+    --outline-hover: rgba(242,244,248,.12);
+}
+
+/* ===== Base ===== */
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.text-soft {
+    color: var(--muted) !important;
+}
+
+/* =========================
+   NAVBAR (pill like the reference)
+   ========================= */
+.nav-pill-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    background: var(--pill-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    backdrop-filter: blur(12px);
+}
+
+    .nav-pill-wrap .nav-link {
+        color: var(--text);
+        opacity: .9;
+        padding: .55rem 1rem;
+        border-radius: 999px;
+    }
+
+        .nav-pill-wrap .nav-link:hover,
+        .nav-pill-wrap .nav-link.active {
+            opacity: 1;
+        }
+
+/* =========================
+   HERO + GLASS
+   ========================= */
+.hero-wrap {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: .18;
+}
+
+.glass {
+    backdrop-filter: blur(10px);
+    background: var(--glass-bg);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    box-shadow: 0 24px 60px rgba(0,0,0,.12);
+}
+
+.hero-wrap .glass {
+    background: var(--hero-glass-bg);
+}
+
+.brand-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brand), var(--brand-2));
+    box-shadow: 0 0 0 4px rgba(111,66,193,.2);
+}
+
+.hero-avatar {
+    width: 380px;
+    max-width: 42vw;
+    aspect-ratio: 1/1.08;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 30px 70px rgba(0,0,0,.18);
+    transform: translateZ(0);
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+    .hero-avatar:hover {
+        transform: translateY(-4px);
+    }
+
+/* =========================
+   BADGES / TECH CHIPS
+   ========================= */
+.tech-badge {
+    background: var(--brand-12);
+    color: var(--brand);
+    border: 1px solid var(--brand-30);
+    padding: .45rem .75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+/* ضبط بادجات Bootstrap الافتراضية في الوضع الداكن */
+html[data-theme="dark"] .badge.text-bg-light {
+    background: rgba(255,255,255,.12);
+    color: #f2f4f8;
+    border: 1px solid rgba(255,255,255,.18);
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.btn-primary {
+    --bs-btn-bg: var(--brand);
+    --bs-btn-border-color: var(--brand);
+    --bs-btn-hover-bg: #5a34ab;
+    --bs-btn-hover-border-color: #5a34ab;
+    box-shadow: 0 8px 20px rgba(111,66,193,.30);
+}
+
+.btn-outline-dark {
+    color: var(--text) !important;
+    border-color: rgba(150,150,150,.35) !important;
+}
+
+    .btn-outline-dark:hover {
+        background: var(--outline-hover) !important;
+    }
+
+/* =========================
+   CARDS (Projects)
+   ========================= */
+.project-card {
+    border: 1px solid var(--border);
+    background: var(--card);
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 1rem;
+}
+
+    .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 50px rgba(0,0,0,.10);
+    }
+
+    .project-card img {
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+    .project-card .card-title {
+        color: var(--text) !important;
+    }
+
+    .project-card .card-text {
+        color: var(--muted) !important;
+    }
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+.section-title {
+    letter-spacing: .3px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #b892ff, #ffab66);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* ظل بسيط لزيادة الوضوح على الداكن */
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+}
+
+/* =========================
+   CANVAS BACKGROUND (stars)
+   ========================= */
+.bg-stars {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: transparent;
+}
+
+/* ===== Footer styles ===== */
+html, body {
+    height: 100%;
+}
+
+.site-footer {
+    background: var(--bg-subtle);
+    color: var(--text);
+    position: relative;
+    z-index: 1;
+}
+
+    .site-footer .footer-link {
+        color: var(--text);
+        text-decoration: none;
+        opacity: .9;
+    }
+
+        .site-footer .footer-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+
+/* ===== Tools marquee ===== */
+.tools-marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+}
+
+.tools-track {
+    display: flex;
+    gap: 48px;
+    padding: 14px 0;
+    animation: tools-scroll 22s linear infinite;
+    will-change: transform;
+}
+
+    .tools-track li {
+        list-style: none;
+        font-size: 44px; /* حجم الأيقونة */
+        color: var(--text);
+        opacity: .9;
+    }
+
+@keyframes tools-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+    /* بما إنك كرّرت العناصر مرتين */
+}
+
+/* زر مستوحى من GitHub */
+.btn-repo {
+    background: #0d6efd; /* أزرق أنيق */
+    color: #fff !important;
+    border: 0;
+    padding: .5rem .9rem;
+    box-shadow: 0 10px 28px rgba(13,110,253,.25);
+}
+
+    .btn-repo:hover {
+        filter: brightness(.95);
+    }
+
+/* كارت مع تحريك لطيف (JS يضيف الميلان) */
+.card-tilt {
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    background: var(--card);
+}
+
+    .card-tilt:hover {
+        border-color: rgba(111,66,193,.35);
+    }
+
+
+/ /* ألوان عامة من الثيم الحالي */
+:root {
+    --brand: #6f42c1;
+    --brand-2: #fd7e14;
+    --bg: #0f1116;
+    --bg-subtle: #121521;
+    --text: #e7e9ee;
+    --muted: #a3a8b3;
+    --card: #161a24;
+    --border: rgba(255,255,255,.08);
+}
+
+/* خلفية ومتن */
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* بطاقات ومظهر عام */
+.glass {
+    backdrop-filter: blur(10px);
+    background: rgba(22,26,36,.85);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(0,0,0,.18);
+}
+
+.text-soft {
+    color: var(--muted);
+}
+
+.hero-wrap {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: .18;
+}
+
+.hero-avatar {
+    width: 380px;
+    max-width: 42vw;
+    aspect-ratio: 1/1.05;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 30px 70px rgba(0,0,0,.18);
+    transition: transform .4s ease;
+}
+
+    .hero-avatar:hover {
+        transform: translateY(-4px);
+    }
+
+.section-title {
+    letter-spacing: .3px;
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tech-badge {
+    background: rgba(111,66,193,.12);
+    color: #cbb6ff;
+    border: 1px solid rgba(111,66,193,.3);
+    padding: .45rem .75rem;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+/* كروت المشاريع */
+.project-card {
+    border: 1px solid var(--border);
+    background: var(--card);
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+    .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 50px rgba(0,0,0,.25);
+    }
+
+    .project-card img {
+        object-fit: cover;
+        aspect-ratio: 16/9;
+    }
+
+/* زر الريبو */
+.btn-repo {
+    --c: #0d6efd;
+    background: var(--c);
+    color: #fff;
+    border: none;
+    padding: .45rem .9rem;
+    box-shadow: 0 10px 26px rgba(13,110,253,.35);
+}
+
+    .btn-repo:hover {
+        filter: brightness(.95);
+        color: #fff;
+    }
+
+/* شريط الأدوات المتحرك */
+.tools-marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.tools-track {
+    display: flex;
+    gap: 32px;
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+    animation: toolsMove 20s linear infinite;
+}
+
+    .tools-track li {
+        font-size: 42px;
+        opacity: .9;
+    }
+
+@keyframes toolsMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* بطاقة التواصل */
+.contact-card {
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: rgba(22,26,36,.9);
+    box-shadow: 0 24px 60px rgba(0,0,0,.25);
+    position: relative;
+}
+
+.contact-stars {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.has-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8792a6;
+}
+
+.contact-input {
+    background: rgba(255,255,255,.03);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+    .contact-input:focus {
+        background: rgba(255,255,255,.05);
+        border-color: #6f42c1;
+        box-shadow: none;
+    }
+
+/* زر الإرسال */
+.btn-send {
+    background: linear-gradient(90deg, #6f42c1, #2e6fff);
+    color: #fff;
+    border: none;
+    padding: .9rem 1.1rem;
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(46,111,255,.25);
+}
+
+    .btn-send:hover {
+        filter: brightness(.95);
+        color: #fff;
+    }
+
+/* الغلوب */
+.globe-wrap {
+    width: 100%;
+    max-width: 540px;
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    background: radial-gradient(120% 120% at 70% 20%, rgba(120,160,255,.08), transparent 60%);
+    box-shadow: 0 24px 60px rgba(0,0,0,.25);
+}
+
+    .globe-wrap canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 24px;
+    }
+
+/* سلوك صغير للشاشات الصغيرة */
+@media (max-width: 991.98px) {
+    .tools-track li {
+        font-size: 32px;
+    }
+}
+/* تأكيد وضوح النص في الفورم */
+.contact-input {
+    color: var(--text) !important;
+    -webkit-text-fill-color: var(--text) !important; /* للمتصفحات WebKit */
+}
+/* ===== Projects page polish ===== */
+.btn-xs {
+    --bs-btn-padding-y: .3rem;
+    --bs-btn-padding-x: .8rem;
+    --bs-btn-font-size: .82rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.projects-toolbar {
+    gap: .35rem;
+}
+
+.search-wrap {
+    min-width: 220px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .55;
+    pointer-events: none;
+}
+
+.search-pill {
+    padding-left: 2.1rem;
+    padding-right: .9rem;
+    height: 34px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+    .search-pill::placeholder {
+        color: var(--text-soft);
+        opacity: .8;
+    }
+
+html[data-theme="light"] .search-pill {
+    background: rgba(255,255,255,.9);
+}
+
+.btn-back {
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    padding: .45rem .9rem;
+}
+
+    .btn-back:hover {
+        filter: brightness(1.05);
+    }
+
+.projects-card {
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
+}
+
+    .projects-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 60px rgba(111,66,193,.18);
+    }
+
+.projects-card-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
+/* ===== Projects — polished ===== */
+.projects-toolbar-wrap { gap:.6rem }
+.proj-back{
+  border:1px solid var(--border); background:var(--surface-2); color:var(--text);
+  padding:.48rem .9rem; border-radius:999px; transition:filter .15s;
+}
+.proj-back:hover{ filter:brightness(1.06) }
+
+.segmented{
+  --pill-gap:.25rem;
+  display:flex; gap:var(--pill-gap);
+}
+.seg-btn{
+  border:1px solid var(--border); background:transparent; color:var(--text);
+  padding:.35rem .9rem; border-radius:999px; font-size:.9rem; line-height:1;
+  transition:all .15s ease; white-space:nowrap;
+}
+.seg-btn:hover{ background:var(--surface-3) }
+.seg-btn.active{ background:var(--primary); border-color:var(--primary); color:#fff; }
+
+.proj-search{
+  position:relative; min-width:240px;
+}
+.proj-search i{
+  position:absolute; left:12px; top:50%; transform:translateY(-50%); opacity:.6; pointer-events:none;
+}
+.proj-search input{
+  padding-left:2.1rem; height:38px; border-radius:999px;
+  background:var(--surface-2); border:1px solid var(--border); color:var(--text);
+}
+html[data-theme="light"] .proj-search input{ background:rgba(255,255,255,.92) }
+.proj-search input::placeholder{ color:var(--text-soft); opacity:.85 }
+
+.projects-card{ transition:transform .18s ease, box-shadow .18s ease }
+.projects-card:hover{ transform:translateY(-4px); box-shadow:0 18px 60px rgba(111,66,193,.18) }
+.projects-img{ aspect-ratio:16/9; object-fit:cover; border-bottom:1px solid var(--border) }
+
+/* إصلاح خلفية الكروت بصفحة Projects */
+.projects-card {
+    background: var(--surface-1) !important; /* سطح أساسي متماشي مع الثيم */
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 1rem;
+}
+
+    .projects-card .card-body {
+        background: transparent !important;
+        color: var(--text) !important;
+    }
+
+html[data-theme="dark"] .projects-card {
+    background: rgba(255, 255, 255, 0.04) !important; /* زجاجي خفيف */
+}
+
+html[data-theme="light"] .projects-card {
+    background: rgba(0, 0, 0, 0.03) !important; /* زجاجي خفيف */
+}
+/* About timeline */
+.timeline {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: .4rem;
+        top: .2rem;
+        bottom: .2rem;
+        width: 2px;
+        background: var(--border);
+    }
+
+.tl-item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.tl-dot {
+    position: absolute;
+    left: -.05rem;
+    top: .3rem;
+    width: .75rem;
+    height: .75rem;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(111,66,193,.15);
+}
+
+.tl-card {
+    padding: .9rem 1rem;
+}
+/* ===== About Page / Timeline ===== */
+.timeline {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: .45rem;
+        top: .2rem;
+        bottom: .2rem;
+        width: 2px;
+        background: var(--border);
+    }
+
+.tl-item {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.tl-dot {
+    position: absolute;
+    left: -.02rem;
+    top: .45rem;
+    width: .75rem;
+    height: .75rem;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(111,66,193,.15);
+    animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+.tl-card {
+    padding: .9rem 1rem;
+}
+
+@keyframes pulseDot {
+    0% {
+        box-shadow: 0 0 0 0 rgba(111,66,193,.25)
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px rgba(111,66,193,0)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(111,66,193,0)
+    }
+}
+

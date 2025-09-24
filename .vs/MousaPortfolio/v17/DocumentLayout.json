@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Asp.net\\MousaPortfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\services\\smtpmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:services\\smtpmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\views\\home\\_certsbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:views\\home\\_certsbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\wwwroot\\data\\certificates.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:wwwroot\\data\\certificates.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\wwwroot\\js\\about.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:wwwroot\\js\\about.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\views\\home\\_featuredprojects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:views\\home\\_featuredprojects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\wwwroot\\data\\projects.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:wwwroot\\data\\projects.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|e:\\asp.net\\mousaportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DDEBE94-668B-4427-B865-5A18318E8D85}|MousaPortfolio.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmtpMailService.cs",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Services\\SmtpMailService.cs",
+              "RelativeDocumentMoniker": "Services\\SmtpMailService.cs",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Services\\SmtpMailService.cs",
+              "RelativeToolTip": "Services\\SmtpMailService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:00:38.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T07:57:26.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_FeaturedProjects.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\_FeaturedProjects.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_FeaturedProjects.cshtml",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\_FeaturedProjects.cshtml",
+              "RelativeToolTip": "Views\\Home\\_FeaturedProjects.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T06:12:45.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "projects.json",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\data\\projects.json",
+              "RelativeDocumentMoniker": "wwwroot\\data\\projects.json",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\data\\projects.json",
+              "RelativeToolTip": "wwwroot\\data\\projects.json",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T06:11:43.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "about.js",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\js\\about.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\about.js",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\js\\about.js",
+              "RelativeToolTip": "wwwroot\\js\\about.js",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAuwK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-24T06:06:11.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_CertsBook.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\_CertsBook.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_CertsBook.cshtml",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\_CertsBook.cshtml",
+              "RelativeToolTip": "Views\\Home\\_CertsBook.cshtml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T06:03:52.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "certificates.json",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\data\\certificates.json",
+              "RelativeDocumentMoniker": "wwwroot\\data\\certificates.json",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\wwwroot\\data\\certificates.json",
+              "RelativeToolTip": "wwwroot\\data\\certificates.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T06:00:00.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswDkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T15:25:41.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T15:20:29.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Asp.net\\MousaPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Asp.net\\MousaPortfolio\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIcAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-23T07:03:28.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

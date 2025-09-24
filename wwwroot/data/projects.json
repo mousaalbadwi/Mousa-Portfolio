@@ -1,0 +1,41 @@
+﻿[
+  {
+    "title": "Nabd",
+    "desc": "News aggregator with clean admin panel.",
+    "image": "/images/project4.jpg",
+    "tech": [ "ASP.NET Core", "EF Core", "Bootstrap" ],
+    "repo": "https://github.com/Abdallah-Allaham/Nabd",
+    "live": null,
+    "featured": true,
+    "featured_order": 1
+  },
+  {
+    "title": "Muta-Engineering",
+    "desc": "Company site + simple CMS.",
+    "image": "/images/project1.jpg",
+    "tech": [ "ASP.NET Core", "SQL Server" ],
+    "repo": "https://github.com/mousaalbadwi/Muta-Engineering-",
+    "live": null,
+    "featured": true,
+    "featured_order": 3
+  },
+  {
+    "title": "MousaTracks",
+    "desc": "Personal tracker app.",
+    "image": "/images/project3.jpg",
+    "tech": [ "ASP.NET Core", "Bootstrap" ],
+    "repo": "https://github.com/mousaalbadwi/MousaTracks",
+    "live": null,
+    "featured": false
+  },
+  {
+    "title": "Goods-System",
+    "desc": "Inventory & orders mini system.",
+    "image": "/images/project2.jpg",
+    "tech": [ "ASP.NET Core", "EF Core", "SQL Server" ],
+    "repo": "https://github.com/mousaalbadwi/Goods-System",
+    "live": null,
+    "featured": true,
+    "featured_order": 2
+  }
+]
